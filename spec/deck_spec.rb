@@ -3,10 +3,11 @@ require 'deck'
 describe Deck do
   subject(:deck) { Deck.new }
 
-  context "Test #new_deck method" do
-    it "should have 52 cards" do
-      expect(deck.cards.length).to eq(52)
+  context "#draw(n)" do
+    it "should return 5 cards from the top of the deck" do
+      expect(deck.draw(5).length).to eq(5)
     end
+
   end
 
 end

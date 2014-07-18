@@ -23,7 +23,11 @@ class Deck
   end
 
   def draw(n)
+    drawn_cards = []
 
+    n.times { drawn_cards << @cards.pop }
+
+    drawn_cards
   end
 
   def is_empty?
